@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rabin Mondal Sabuj — Freelance Developer</title>
+  <meta name="description" content="Rabin Mondal Sabuj — Freelance WordPress &amp; Frontend developer from Dhaka.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#06b6d4;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071020 0%,#0c1622 100%);color:#e6eef6;line-height:1.5}
+    .container{max-width:1100px;margin:36px auto;padding:24px}
+
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+    .topcontacts{font-size:14px;color:var(--muted)}
+    nav{display:flex;gap:18px}
+    nav a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:8px}
+    nav a:hover{background:var(--glass);color:#fff}
+
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:28px;align-items:center}
+    .hero-left h1{font-size:36px;margin:0 0 6px 0}
+    .hero-left h2{margin:0 0 12px 0;font-weight:600;color:var(--accent)}
+    .hero-left p{color:var(--muted);margin:0 0 18px}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--accent);border:none;color:#042022;padding:10px 14px;border-radius:10px;font-weight:700;cursor:pointer}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:18px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .profile{display:flex;flex-direction:column;gap:12px;align-items:center}
+    .avatar{width:140px;height:140px;border-radius:12px;background:linear-gradient(135deg,#062d38,#053044);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:40px;color:rgba(255,255,255,0.9)}
+    .socials{display:flex;gap:10px}
+    .socials a{color:var(--muted);text-decoration:none;font-size:14px}
+
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+    .service{padding:12px;border-radius:10px;background:rgba(255,255,255,0.02)}
+    .service h4{margin:0 0 6px}
+    .service p{margin:0;color:var(--muted);font-size:14px}
+
+    .skills{margin-top:20px}
+    .skill{margin-bottom:10px}
+    .skill .bar{height:10px;background:rgba(255,255,255,0.06);border-radius:8px;overflow:hidden}
+    .skill .bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#8be3e8);width:0}
+
+    .stats{display:flex;gap:12px;margin-top:18px}
+    .stat{flex:1;background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;text-align:center}
+    .stat h3{margin:0;color:var(--accent)}
+    .stat p{margin:6px 0 0;color:var(--muted);font-size:13px}
+
+    footer{margin-top:36px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.03);display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:14px}
+
+    @media (max-width:880px){.hero{grid-template-columns:1fr}.container{padding:16px}.avatar{width:120px;height:120px}}
+    @media (max-width:520px){.services{grid-template-columns:1fr}.topcontacts{display:none}.nav{display:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="topcontacts">+88 01719220753 • <a href="mailto:mail@sabuj.com.bd" style="color:var(--muted);text-decoration:none">mail@sabuj.com.bd</a></div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="hero-left card">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <p style="margin:0;color:var(--muted);font-weight:600"># Hi, I am</p>
+            <h1>Rabin Mondal Sabuj</h1>
+            <h2>Freelance developer from Dhaka.</h2>
+            <p>I build responsive WordPress websites, Shopify stores and landing pages for startups and e-commerce. I also offer on-page SEO, website security, and graphics design.</p>
+            <div class="cta">
+              <a class="btn" href="#contact">Hire Me</a>
+              <a class="btn secondary" href="#portfolio">See Portfolio</a>
+            </div>
+          </div>
+          <div style="max-width:220px;text-align:right;color:var(--muted)">
+            <div style="font-size:12px;text-transform:uppercase">Exclusively works with</div>
+            <div style="margin-top:8px;font-weight:700;color:#ffffff">Startups and eCommerce</div>
+          </div>
+        </div>
+
+        <div class="services" aria-label="services">
+          <div class="service card"><h4>WordPress</h4><p>I Will make a Responsive WordPress Website for you.</p></div>
+          <div class="service card"><h4>SEO</h4><p>On-Page optimization and search engine submission (Google, Bing).</p></div>
+          <div class="service card"><h4>Shopify</h4><p>I Will make eCommerce Website for you.</p></div>
+          <div class="service card"><h4>Website Security</h4><p>Secure your website from malicious code or software.</p></div>
+          <div class="service card"><h4>Elementor</h4><p>Make your dynamic website using Elementor.</p></div>
+          <div class="service card"><h4>Graphics Design</h4><p>Make your logo, Marketing &amp; advertising graphic design.</p></div>
+        </div>
+
+        <section class="skills">
+          <h3 style="margin:14px 0 8px 0">My Expertise</h3>
+          <div class="skill"><div style="display:flex;justify-content:space-between"><strong>WordPress</strong><span>98%</span></div><div class="bar" data-value="98"><i></i></div></div>
+          <div class="skill"><div style="display:flex;justify-content:space-between"><strong>Shopify</strong><span>75%</span></div><div class="bar" data-value="75"><i></i></div></div>
+          <div class="skill"><div style="display:flex;justify-content:space-between"><strong>Elementor</strong><span>92%</span></div><div class="bar" data-value="92"><i></i></div></div>
+          <div class="skill"><div style="display:flex;justify-content:space-between"><strong>HTML CSS JS</strong><span>99%</span></div><div class="bar" data-value="99"><i></i></div></div>
+          <div class="skill"><div style="display:flex;justify-content:space-between"><strong>Graphics Design</strong><span>90%</span></div><div class="bar" data-value="90"><i></i></div></div>
+        </section>
+
+      </section>
+
+      <aside class="card profile">
+        <div class="avatar">RM</div>
+        <div style="text-align:center">
+          <h3 style="margin:6px 0 0 0">Rabin Mondal Sabuj</h3>
+          <p style="margin:6px 0;color:var(--muted)">Freelance developer • Dhaka, Bangladesh</p>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><h3>—</h3><p>Project Complete</p></div>
+          <div class="stat"><h3>—</h3><p>Years</p></div>
+          <div class="stat"><h3>—</h3><p>Happy Customers</p></div>
+        </div>
+
+        <div style="width:100%;margin-top:12px">
+          <div style="font-weight:700;margin-bottom:6px">Contact</div>
+          <div style="font-size:14px;color:var(--muted);word-break:break-all">Email: <a href="mailto:mondalsabuj91@gmail.com" style="color:var(--muted);text-decoration:none">mondalsabuj91@gmail.com</a></div>
+          <div style="font-size:14px;color:var(--muted)">Phone: +88 01719220753</div>
+        </div>
+
+        <div style="width:100%;margin-top:12px;display:flex;justify-content:center">
+          <div class="socials">
+            <a href="https://www.facebook.com/sabuj.rabin" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com/in/sabuj-rabin" target="_blank">LinkedIn</a>
+            <a href="https://www.twitter.com/sabujArjo" target="_blank">Twitter</a>
+          </div>
+        </div>
+
+      </aside>
+    </main>
+
+    <footer>
+      <div>Designed By Dream Choice IT Solutions — Copyright Rabin Mondal Sabuj</div>
+      <div style="text-align:right">Flickr • Skype: mondalsabuj • info@sabuj.com.bd</div>
+    </footer>
+  </div>
+
+  <script>
+    // animate skill bars
+    document.querySelectorAll('.bar').forEach(bar=>{
+      const value = Number(bar.dataset.value)||0;
+      const inner = bar.querySelector('i');
+      // animate width
+      requestAnimationFrame(()=>{
+        inner.style.width = value + '%';
+      });
+    });
+  </script>
+</body>
+</html>
